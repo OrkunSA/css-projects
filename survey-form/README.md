@@ -1,4 +1,4 @@
-<img width="1323" alt="Survey Form" src="/public/images/info.png">
+<img width="1323" alt="Survey Form" src="/Users/macbookpro/Desktop/Playground/small-projects/survey-form/public/images/info.png">
 
 # Description
 
