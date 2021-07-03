@@ -1,4 +1,4 @@
-<img width="1323" alt="Tribute Page" src="/public/images/info.png">
+<img width="1323" alt="Tribute Page" src="./public/images/info.png">
 
 # Description
 
