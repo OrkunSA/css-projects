@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">COVID-19 Vaccination Form</h1>
+        <p id="description" class="description text-center">
+          Please help us to improve our database
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter Your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span>
+          </label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            class="form-control"
+            min="0"
+            max="99"
+            placeholder="Enter Your Age"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>Did you receive your Vaccine?</p>
+          <select name="answer" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select your answer</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>If the answer is "Yes", which vaccine did you have?</p>
+          <label>
+            <input
+              type="radio"
+              name="vaccine-choice"
+              value="pfizer"
+              class="input-radio"
+              checked
+            />Pfizer
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="vaccine-choice"
+              value="Moderna"
+              class="input-radio"
+            />Moderna
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="vaccine-choice"
+              value="J & J"
+              class="input-radio"
+            />J & J
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Did you receive the first dose only or both?</p>
+          <select id="dose" name="dose" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="first">First Dose</option>
+            <option value="both">Both</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            Are you willing to travel again?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label
+            ><input
+              name="prefer"
+              value="domestic"
+              type="checkbox"
+              class="input-checkbox"
+            />Only Domestic Travel</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="international"
+              type="checkbox"
+              class="input-checkbox"
+            />Only International</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="never"
+              type="checkbox"
+              class="input-checkbox"
+            />Never</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+          <div class="form-group">
+            <button type="submit" class="submit-button" id="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
