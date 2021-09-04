@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="/product-landing-page/public/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div id="page-wrapper">
@@ -13,39 +19,40 @@
         <div class="logo">
           <img
             id="header-img"
-            src="/product-landing-page/public/images/ffdf8f750ccb46b7ae3404746e5b13a4.png"
+            src="https://35n3bl461hhr1jpnz3tk5enp-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/new-logo.svg"
             alt="company logo"
           />
         </div>
+
         <nav id="nav-bar">
           <ul>
-            <li><a href="#extendedstay" class="nav-link">Extended Stay</a></li>
-            <li>
-              <a href="#propertypartners" class="nav-link">Property Partners</a>
-            </li>
-            <li><a href="#aboutus" class="nav-link">About Us</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#locations">Locations</a></li>
           </ul>
         </nav>
       </header>
+
       <div class="container"></div>
+
       <section id="hero">
         <h2>Home away from home</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input
-            type="email"
             name="email"
             id="email"
+            type="email"
             placeholder="Enter your email address"
             required
           />
-          <input type="submit" value="SUBSCRIBE" class="btn" />
+          <input id="submit" type="submit" value="SUBSCRIBE" class="btn" />
         </form>
       </section>
 
       <div class="container">
-        <section id="extendedstay">
+        <section id="features">
           <div class="grid">
-            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="icon"><i class="fas fa-3x fa-home"></i></div>
             <div class="desc">
               <h2>Your Home Away From Home</h2>
               <p>
@@ -55,7 +62,7 @@
             </div>
           </div>
           <div class="grid">
-            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="icon"><i class="fas fa-3x fa-window-close"></i></div>
             <div class="desc">
               <h2>Flexible Cancellation</h2>
               <p>
@@ -66,7 +73,7 @@
           </div>
           <div class="grid">
             <div class="icon">
-              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+              <i class="fa fa-3x fa-check-circle" aria-hidden="true"></i>
             </div>
             <div class="desc">
               <h2>Mobile Check-In</h2>
@@ -76,6 +83,7 @@
         </section>
         <section id="how-it-works">
           <iframe
+            id="video"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/fHdMA9Lz5gk"
@@ -86,7 +94,7 @@
           ></iframe>
         </section>
         <section id="locations">
-          <div class="cities" id="Dallas">
+          <div class="cities" id="tenor">
             <div class="level">Dallas</div>
             <h2>Elm Street</h2>
             <ol>
@@ -96,28 +104,28 @@
               <li>Lorem ipsum.</li>
             </ol>
             <button class="btn">Select</button>
-            <div class="locations" id="Miami">
-              <div class="level">Miami</div>
-              <h2>Miami Downtown</h2>
-              <ol>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-              </ol>
-              <button class="btn">Select</button>
-              <div class="locations" id="Cincinnati">
-                <div class="level">Cincinnati</div>
-                <h2>Vine Street</h2>
-                <ol>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                </ol>
-                <button class="btn">Select</button>
-              </div>
-            </div>
+          </div>
+          <div class="cities" id="bass">
+            <div class="level">Miami</div>
+            <h2>Miami Downtown</h2>
+            <ol>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="cities" id="valve">
+            <div class="level">Cincinnati</div>
+            <h2>Vine Street</h2>
+            <ol>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ol>
+            <button class="btn">Select</button>
           </div>
         </section>
         <footer>
@@ -130,6 +138,7 @@
         </footer>
       </div>
     </div>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
