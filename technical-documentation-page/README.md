@@ -1,4 +1,4 @@
-<img width="1323" alt="Tribute Page" src="./public/images/screen.png">
+<img width="1323" alt="Technical Documentation Page" src="./public/images/screen.png">
 
 # Description
 
