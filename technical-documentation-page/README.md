@@ -1,5 +1,9 @@
 <img width="1323" alt="Redux Technical Documentation Page" src="./public/images/screen.png">
 
+# Live
+
+https://kind-fermi-cdfe06.netlify.app/
+
 # Description
 
 Redux Documentation Page built with HTML AND CSS only.
